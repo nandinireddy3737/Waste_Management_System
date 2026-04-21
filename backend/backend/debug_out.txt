@@ -1,0 +1,17 @@
+﻿COLUMNS:
+FIELD=bin_id TYPE=int NULL=NO
+FIELD=zone_id TYPE=int NULL=YES
+FIELD=location TYPE=varchar(100) NULL=YES
+FIELD=capacity TYPE=int NULL=YES
+FIELD=waste_type TYPE=varchar(30) NULL=YES
+FIELD=status TYPE=varchar(20) NULL=YES
+TRIGGERS:
+TRIGGER=AFTER_INSERT_COLLECTION_EVENT TABLE=collection_event EVENT=INSERT TIMING=AFTER
+TRIGGER=BEFORE_INSERT_COLLECTION_SCHEDULE TABLE=collection_schedule EVENT=INSERT TIMING=BEFORE
+TRIGGER=AFTER_UPDATE_WASTE_BIN TABLE=waste_bin EVENT=UPDATE TIMING=AFTER
+BINS:
+BIN={"bin_id":101,"zone_id":1,"location":"Near Bus Stand","capacity":100,"waste_type":"Dry","status":"Full"}
+BIN={"bin_id":102,"zone_id":1,"location":"Cross Cut Road","capacity":120,"waste_type":"Wet","status":null}
+BIN={"bin_id":103,"zone_id":2,"location":"Main Market","capacity":150,"waste_type":"Wet","status":null}
+TESTING UPDATE on bin_id=101
+UPDATE_OK affectedRows=1 changedRows=0

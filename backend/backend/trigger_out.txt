@@ -1,0 +1,16 @@
+﻿Dropping all existing triggers...
+  Dropped: after_collection_event
+  Dropped: prevent_duplicate_schedule
+  Dropped: set_schedule_active
+  Dropped: trg_auto_schedule_on_full
+  Dropped: prevent_duplicate_worker_assignment
+  Dropped: BEFORE_INSERT_COLLECTION_SCHEDULE
+  Dropped: AFTER_INSERT_COLLECTION_EVENT
+  Dropped: AFTER_UPDATE_WASTE_BIN
+All old triggers dropped.
+
+Created: BEFORE_INSERT_COLLECTION_SCHEDULE
+Created: AFTER_INSERT_COLLECTION_EVENT
+Created: AFTER_UPDATE_WASTE_BIN
+
+All triggers created successfully!

@@ -1,0 +1,196 @@
+.mongo-complaints-wrap {
+  text-align: left;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.mongo-complaints-banner {
+  display: inline-block;
+  background: rgba(25, 118, 210, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.mongo-complaints-muted {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.mongo-complaints-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.mongo-complaints-issue {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #1b5e20;
+}
+
+.mongo-complaints-location {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+.mongo-status-badge {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  white-space: nowrap;
+}
+
+.mongo-complaints-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.mongo-complaints-back {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mongo-complaints-title {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.mongo-complaints-note {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 20px;
+}
+
+.mongo-complaints-form {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.mongo-complaints-form h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.mongo-complaints-form label {
+  display: block;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.9rem;
+}
+
+.mongo-complaints-form input,
+.mongo-complaints-form textarea {
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.95);
+  color: #111;
+  box-sizing: border-box;
+}
+
+.mongo-complaints-submit {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+ margin-top: 8px;
+}
+
+.mongo-complaints-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.mongo-complaints-msg {
+  color: #c8e6c9;
+  margin-top: 8px;
+}
+
+.mongo-complaints-list-section h3 {
+  color: #fff;
+}
+
+.mongo-complaints-err {
+  color: #ffcdd2;
+}
+
+.mongo-complaints-empty {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.mongo-complaints-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mongo-complaints-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.mongo-complaints-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.mongo-status {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #e0e0e0;
+}
+
+.mongo-status-Pending { background: #fff3e0; color: #e65100; }
+.mongo-status-Resolved,
+.mongo-status-Closed { background: #e8f5e9; color: #2e7d32; }
+
+.mongo-complaints-meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 8px 0;
+}
+
+.mongo-complaints-desc {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.mongo-complaints-actions {
+  margin-top: 10px;
+}
+
+.mongo-complaints-actions select {
+  margin-left: 8px;
+  padding: 6px;
+  border-radius: 6px;
+}

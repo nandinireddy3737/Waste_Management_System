@@ -1,0 +1,124 @@
+.officer-complaints-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 8px 24px;
+  text-align: left;
+}
+
+.officer-complaints-banner {
+  display: inline-block;
+  background: rgba(25, 118, 210, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.officer-complaints-header {
+  margin-bottom: 12px;
+}
+
+.officer-complaints-back {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.officer-complaints-back:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.officer-complaints-title {
+  margin: 0 0 8px 0;
+  font-size: 1.35rem;
+  color: #fff;
+}
+
+.officer-complaints-sub {
+  margin: 0 0 20px 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.officer-complaints-sub code {
+  color: #b3e5fc;
+}
+
+.officer-complaints-muted {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.officer-complaints-err {
+  color: #ffcdd2;
+  padding: 12px;
+  background: rgba(211, 47, 47, 0.25);
+  border-radius: 8px;
+}
+
+.officer-complaints-empty {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.officer-complaints-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.officer-complaints-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.officer-complaints-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.officer-complaints-issue {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #1b5e20;
+}
+
+.officer-complaints-location {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+.officer-status-badge {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  white-space: nowrap;
+}
+
+.officer-complaints-actions label {
+  font-size: 0.9rem;
+  color: #424242;
+}
+
+.officer-complaints-actions select {
+  margin-left: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  font-size: 14px;
+}
