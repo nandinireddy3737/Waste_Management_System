@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import WorkerLogin from './WorkerLogin';
 import WorkerSignup from './WorkerSignup';
@@ -13,7 +13,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showMongoComplaints, setShowMongoComplaints] = useState(false);
   const [userName, setUserName] = useState('');
-  const [selectedSection, setSelectedSection] = useState(null);
+  const [, setSelectedSection] = useState(null);
   const [workerId, setWorkerId] = useState('');
   
   const [signUpData, setSignUpData] = useState({
@@ -481,7 +481,7 @@ function WorkerDashboard({ userName, onLogout, workerId, setWorkerId }) {
 
   const hasWorkerId = Boolean(workerId && String(workerId).trim());
 
-  const loadTodayTasks = async () => {
+  const loadTodayTasks = useCallback(async () => {
     if (!hasWorkerId) return;
     setIsLoading(true);
     setError(null);
@@ -521,11 +521,11 @@ function WorkerDashboard({ userName, onLogout, workerId, setWorkerId }) {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [hasWorkerId, workerId]);
 
   useEffect(() => {
     loadTodayTasks();
-  }, [hasWorkerId, workerId]);
+  }, [loadTodayTasks]);
 
   const handleWorkerIdSubmit = (e) => {
     e.preventDefault();
@@ -549,10 +549,7 @@ function WorkerDashboard({ userName, onLogout, workerId, setWorkerId }) {
     if (!task || !task.schedule_id) return;
 
     const quantityValue = quantityInputs[task.schedule_id];
-    const collectedQuantity =
-      quantityValue !== undefined && quantityValue !== null && String(quantityValue).trim() !== ''
-        ? Number(quantityValue)
-        : 0;
+    void quantityValue;
 
     try {
       const res = await fetch('http://localhost:5000/api/worker/complete-task', {
@@ -1236,7 +1233,7 @@ function SmartInsightsSection() {
   const [dailyReport, setDailyReport] = useState({});
   const [overloadedVehicles, setOverloadedVehicles] = useState([]);
   const [idleWorkers, setIdleWorkers] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchInsights = async () => {
